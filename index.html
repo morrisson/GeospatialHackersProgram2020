@@ -148,7 +148,7 @@
 
       async function limitMap(select_value) {
 
-        await axios.get(ngrokURL + 'query?freetime='+ select_value)
+        await axios.get(ngrokURL + 'query?freetime='+ select_value + '&limit=20')
         .then(function (response) {
           console.log(response);
           nagoyaMap = response;
